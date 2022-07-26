@@ -1,0 +1,13 @@
+if (mode == 'y')
+			{
+				dotPos.x = rayEndPointH.x;
+				dotPos.y = rayEndPointH.y;
+			}
+			else if (mode == 'x')
+			{
+				dotPos.x = rayEndPointV.x;
+				dotPos.y = rayEndPointV.y;
+			}
+
+			dotPos.y = rayStart.y + renderDistance * -sin(toRad(playerAngle));
+			dotPos.x = rayStart.x + renderDistance * cos(toRad(playerAngle));
